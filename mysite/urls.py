@@ -22,4 +22,5 @@ urlpatterns = [
     url(r'^add/$', learn_views.add, name='add'),
     url(r'^$', learn_views.index),  # new
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^add2/(\d+)/(\d+)/$', learn_views.add2, name='add2'),
 ]
