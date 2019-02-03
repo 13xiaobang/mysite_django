@@ -21,7 +21,8 @@ from learn import views as learn_views  # new
 urlpatterns = [
     url(r'^add2/(\d+)/(\d+)/$', learn_views.add2, name='add2'),
     url(r'^add/$', learn_views.add, name='add'),
-    url(r'^$', learn_views.index),  # new
+    #url(r'^$', learn_views.index),  # new
+    url(r'^$', learn_views.home, name='home'),
     url(r'^vadd/$', learn_views.vadd, name='vadd'),  # new
     url(r'^admin/', include(admin.site.urls)),
 ]
