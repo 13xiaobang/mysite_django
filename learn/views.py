@@ -16,3 +16,6 @@ def add(request):
 def add2(request, a, b):
     c = int(a) + int(b)
     return HttpResponse(str(c))
+
+def vadd(request):
+    return render(request, 'add.html')
